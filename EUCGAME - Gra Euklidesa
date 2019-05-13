@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+int liczba_partii, A=0, B=1;
+ 
+cin >>liczba_partii;
+ 
+for (int i=0; i<liczba_partii; i++)
+    {
+    cin >>A>>B;
+ 
+    while (A!=B)
+    {
+        if (A>B) {A=A-B;}
+        if (B>A) {B=B-A;}
+    }
+    cout << A+B<<endl;
+    }
+return 0;
+}
